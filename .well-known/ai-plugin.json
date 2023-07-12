@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Movies",
+  "name_for_model": "movies",
+  "description_for_human": "Explore the latest movies by release date or genre and view their runtime.",
+  "description_for_model": "Get movies by title or genre\n\n###\n- ALWAYS group movies by genre\n\nExample:\nDocumentary\n[Washed Ashore](https://www.imdb.com/title/tt0109128/) (86 minutes)\n[Land of Nairi](https://www.imdb.com/title/tt0361130/) (67 minutes)\nSci-Fi, Thriller\n[Death Ray on Coral Island](https://www.imdb.com/title/tt0347992/)\n###",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:5003/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "http://localhost:5003/logo.png",
+  "contact_email":"help@surge.ai",
+  "legal_info_url":"https://www.surge.ai/privacy-policy"
+ }

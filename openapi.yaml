@@ -1,0 +1,43 @@
+openapi: 3.0.1
+info:
+  title: Movies
+  description: Search for recent movie titles
+  version: 'v1'
+servers:
+  - url: http://localhost:5003
+paths:
+  /search:
+    get:
+      operationId: getSearch
+      summary: Get list of movies
+      parameters:
+        - in: query
+          name: genre
+          schema:
+            type: string
+          required: false
+          description: Search genre
+        - in: query
+          name: year
+          schema:
+            type: string
+          required: false
+          description: Search year
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getMoviesResponse'
+
+components:
+  schemas:
+    getMoviesResponse:
+      type: object
+      properties:
+        todos:
+          type: array
+          items:
+            type: string
+          description: The list of movies
