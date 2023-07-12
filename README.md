@@ -1,5 +1,5 @@
 # Movies Plugin for ChatGPT
-Example movies plugin for chatgpt. Uses sheety.co as a backend.
+Example movies plugin for chatgpt. Uses https://sheety.co as a backend.
 
 # Installation Guide
 
