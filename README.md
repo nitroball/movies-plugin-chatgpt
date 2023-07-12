@@ -2,8 +2,11 @@
 Example movies plugin for chatgpt. Uses sheety.co as a backend.
 
 # Installation Guide
-pip install -r requirements.txt
+
+`pip install -r requirements.txt`
 
 # Running the server (localhost:5003)
-source env/bin/activate
-python main.py
+
+`source env/bin/activate`
+
+`python main.py`
